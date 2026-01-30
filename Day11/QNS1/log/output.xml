@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-01-30T11:25:30.116539" rpa="false" schemaversion="5">
+<suite id="s1" name="Intro" source="D:\NGATWIPRO\Day11\QNS1\intro.robot">
+<test id="s1-t1" name="First Test Case" line="9">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-30T11:25:30.197267" level="INFO">Hello, Robot Framework!</msg>
+<arg>${GREETING}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-30T11:25:30.196605" elapsed="0.004491"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${GREETING}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T11:25:30.201386" elapsed="0.001043"/>
+</kw>
+<status status="PASS" start="2026-01-30T11:25:30.195556" elapsed="0.007116"/>
+</test>
+<test id="s1-t2" name="Second Test Case" line="13">
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-01-30T11:25:30.203743" level="INFO">The items are: ['One', 'Two', 'Three']</msg>
+<arg>The items are: ${ITEMS}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-01-30T11:25:30.203350" elapsed="0.000540"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>First item is: ${ITEMS}[0]</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T11:25:30.204040" elapsed="0.000457"/>
+</kw>
+<status status="PASS" start="2026-01-30T11:25:30.202960" elapsed="0.001702"/>
+</test>
+<status status="PASS" start="2026-01-30T11:25:30.133400" elapsed="0.071726"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Intro" id="s1" pass="2" fail="0" skip="0">Intro</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

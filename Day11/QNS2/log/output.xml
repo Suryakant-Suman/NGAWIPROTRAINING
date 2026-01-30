@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-01-30T11:27:34.997079" rpa="false" schemaversion="5">
+<suite id="s1" name="Verify Installation" source="D:\NGATWIPRO\Day11\QNS2\verify_installation.robot">
+<test id="s1-t1" name="Verify Python And Robot Framework Installation" line="7">
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-30T11:27:35.389798" level="INFO">Starting process:
+python --version</msg>
+<msg time="2026-01-30T11:27:35.400971" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-30T11:27:35.411694" level="INFO">Process completed.</msg>
+<msg time="2026-01-30T11:27:35.412083" level="INFO">${python} = &lt;result object with rc 0&gt;</msg>
+<var>${python}</var>
+<arg>python</arg>
+<arg>--version</arg>
+<arg>stdout=PIPE</arg>
+<arg>stderr=PIPE</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-30T11:27:35.388295" elapsed="0.023883"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Python Version: ${python.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T11:27:35.412549" elapsed="0.002673"/>
+</kw>
+<kw name="Run Process" owner="Process">
+<msg time="2026-01-30T11:27:35.416525" level="INFO">Starting process:
+robot --version</msg>
+<msg time="2026-01-30T11:27:35.423749" level="INFO">Waiting for process to complete.</msg>
+<msg time="2026-01-30T11:27:36.176165" level="INFO">Process completed.</msg>
+<msg time="2026-01-30T11:27:36.176696" level="INFO">${robot} = &lt;result object with rc 251&gt;</msg>
+<var>${robot}</var>
+<arg>robot</arg>
+<arg>--version</arg>
+<arg>stdout=PIPE</arg>
+<arg>stderr=PIPE</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<status status="PASS" start="2026-01-30T11:27:35.415552" elapsed="0.761251"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Robot Framework Version: ${robot.stdout}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T11:27:36.177146" elapsed="0.002233"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>SeleniumLibrary imported successfully</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-01-30T11:27:36.179760" elapsed="0.000459"/>
+</kw>
+<status status="PASS" start="2026-01-30T11:27:35.385829" elapsed="0.794639"/>
+</test>
+<status status="PASS" start="2026-01-30T11:27:35.030839" elapsed="1.150379"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Verify Installation" id="s1" pass="1" fail="0" skip="0">Verify Installation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

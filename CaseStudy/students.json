@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "name": "Surya",
+    "department": "CSE",
+    "semester": 4,
+    "marks": [
+      65,
+      78,
+      76,
+      56,
+      89
+    ],
+    "average": 72.8,
+    "grade": "B"
+  }
+]
