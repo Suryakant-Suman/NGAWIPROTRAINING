@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-02T14:33:06.913400" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot" source="D:\NGATWIPRO\CasesStudy3\Robot\robot">
+<suite id="s1-s1" name="Booking Api" source="D:\NGATWIPRO\CasesStudy3\Robot\robot\booking_api.robot">
+<test id="s1-s1-t1" name="Book Movie Tickets" line="8">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:33:07.038974" level="INFO">Creating Session using : alias=api, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>api</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-02T14:33:07.038797" elapsed="0.000330"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-02-02T14:33:07.040130" level="INFO">${movie} = {'id': '101', 'movie_name': 'Interstellar', 'language': 'English', 'duration': '2h 49m', 'price': '250'}</msg>
+<var>${movie}</var>
+<arg>id=101</arg>
+<arg>movie_name=Interstellar</arg>
+<arg>language=English</arg>
+<arg>duration=2h 49m</arg>
+<arg>price=250</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.039423" elapsed="0.000732"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:33:07.045538" level="INFO">POST Request : url=http://127.0.0.1:5000/api/movies 
+ path_url=/api/movies 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '104', 'Content-Type': 'application/json'} 
+ body=b'{"id": "101", "movie_name": "Interstellar", "language": "English", "duration": "2h 49m", "price": "250"}' 
+ </msg>
+<msg time="2026-02-02T14:33:07.045612" level="INFO">POST Response : url=http://127.0.0.1:5000/api/movies 
+ status=201, reason=CREATED 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.13.5', 'Date': 'Mon, 02 Feb 2026 09:03:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '117', 'Connection': 'close'} 
+ body={
+  "duration": "2h 49m",
+  "id": "101",
+  "language": "English",
+  "movie_name": "Interstellar",
+  "price": "250"
+}
+ 
+ </msg>
+<arg>api</arg>
+<arg>/api/movies</arg>
+<arg>json=${movie}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.040417" elapsed="0.005243"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-02-02T14:33:07.046218" level="INFO">${booking} = {'movie_id': '101', 'seats': '3'}</msg>
+<var>${booking}</var>
+<arg>movie_id=101</arg>
+<arg>seats=3</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.045951" elapsed="0.000287"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:33:07.049420" level="INFO">POST Request : url=http://127.0.0.1:5000/api/bookings 
+ path_url=/api/bookings 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '33', 'Content-Type': 'application/json'} 
+ body=b'{"movie_id": "101", "seats": "3"}' 
+ </msg>
+<msg time="2026-02-02T14:33:07.049552" level="INFO">POST Response : url=http://127.0.0.1:5000/api/bookings 
+ status=201, reason=CREATED 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.13.5', 'Date': 'Mon, 02 Feb 2026 09:03:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '58', 'Connection': 'close'} 
+ body={
+  "movie_id": 101,
+  "seats": 3,
+  "total_price": 750
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:33:07.049774" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>api</arg>
+<arg>/api/bookings</arg>
+<arg>json=${booking}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.046497" elapsed="0.003319"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.050787" elapsed="0.000395"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:33:07.038215" elapsed="0.013307"/>
+</test>
+<status status="PASS" start="2026-02-02T14:33:06.943161" elapsed="0.108931"/>
+</suite>
+<suite id="s1-s2" name="Movies Api" source="D:\NGATWIPRO\CasesStudy3\Robot\robot\movies_api.robot">
+<test id="s1-s2-t1" name="Get All Movies" line="9">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:33:07.062681" level="INFO">Creating Session using : alias=movieapi, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>movieapi</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-02T14:33:07.062533" elapsed="0.000481"/>
+</kw>
+<kw name="GET On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:33:07.066956" level="INFO">GET Request : url=http://127.0.0.1:5000/api/movies 
+ path_url=/api/movies 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive'} 
+ body=None 
+ </msg>
+<msg time="2026-02-02T14:33:07.067025" level="INFO">GET Response : url=http://127.0.0.1:5000/api/movies 
+ status=200, reason=OK 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.13.5', 'Date': 'Mon, 02 Feb 2026 09:03:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '263', 'Connection': 'close'} 
+ body=[
+  {
+    "duration": "2h 49m",
+    "id": 101,
+    "language": "English",
+    "movie_name": "Interstellar",
+    "price": 250
+  },
+  {
+    "duration": "2h 49m",
+    "id": "101",
+    "language": "English",
+    "movie_name": "Interstellar",
+    "price": "250"
+  }
+]
+ 
+ </msg>
+<msg time="2026-02-02T14:33:07.067115" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<var>${response}</var>
+<arg>movieapi</arg>
+<arg>/api/movies</arg>
+<doc>Sends a GET request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.063385" elapsed="0.003746"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>200</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.067692" elapsed="0.000175"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-02T14:33:07.068487" level="INFO">[{'duration': '2h 49m', 'id': 101, 'language': 'English', 'movie_name': 'Interstellar', 'price': 250}, {'duration': '2h 49m', 'id': '101', 'language': 'English', 'movie_name': 'Interstellar', 'price': '250'}]</msg>
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.068057" elapsed="0.000462"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:33:07.061850" elapsed="0.007116"/>
+</test>
+<test id="s1-s2-t2" name="Add New Movie" line="15">
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:33:07.069971" level="INFO">Creating Session using : alias=movieapi, url=http://127.0.0.1:5000, headers={},                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<arg>movieapi</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="PASS" start="2026-02-02T14:33:07.069841" elapsed="0.000246"/>
+</kw>
+<kw name="Create Dictionary" owner="BuiltIn">
+<msg time="2026-02-02T14:33:07.070804" level="INFO">${movie} = {'id': '201', 'movie_name': 'Tenet', 'language': 'English', 'duration': '2h 30m', 'price': '300'}</msg>
+<var>${movie}</var>
+<arg>id=201</arg>
+<arg>movie_name=Tenet</arg>
+<arg>language=English</arg>
+<arg>duration=2h 30m</arg>
+<arg>price=300</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.070493" elapsed="0.000333"/>
+</kw>
+<kw name="POST On Session" owner="RequestsLibrary">
+<msg time="2026-02-02T14:33:07.075243" level="INFO">POST Request : url=http://127.0.0.1:5000/api/movies 
+ path_url=/api/movies 
+ headers={'User-Agent': 'python-requests/2.32.5', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '97', 'Content-Type': 'application/json'} 
+ body=b'{"id": "201", "movie_name": "Tenet", "language": "English", "duration": "2h 30m", "price": "300"}' 
+ </msg>
+<msg time="2026-02-02T14:33:07.075297" level="INFO">POST Response : url=http://127.0.0.1:5000/api/movies 
+ status=201, reason=CREATED 
+ headers={'Server': 'Werkzeug/3.1.5 Python/3.13.5', 'Date': 'Mon, 02 Feb 2026 09:03:07 GMT', 'Content-Type': 'application/json', 'Content-Length': '110', 'Connection': 'close'} 
+ body={
+  "duration": "2h 30m",
+  "id": "201",
+  "language": "English",
+  "movie_name": "Tenet",
+  "price": "300"
+}
+ 
+ </msg>
+<msg time="2026-02-02T14:33:07.075382" level="INFO">${response} = &lt;Response [201]&gt;</msg>
+<var>${response}</var>
+<arg>movieapi</arg>
+<arg>/api/movies</arg>
+<arg>json=${movie}</arg>
+<doc>Sends a POST request on a previously created HTTP Session.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.071582" elapsed="0.003820"/>
+</kw>
+<kw name="Status Should Be" owner="RequestsLibrary">
+<arg>201</arg>
+<arg>${response}</arg>
+<doc>Fails if response status code is different than the expected.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.076004" elapsed="0.000203"/>
+</kw>
+<kw name="Dictionary Should Contain Key" owner="Collections">
+<arg>${response.json()}</arg>
+<arg>movie_name</arg>
+<doc>Fails if ``key`` is not found from ``dictionary``.</doc>
+<status status="PASS" start="2026-02-02T14:33:07.076606" elapsed="0.000404"/>
+</kw>
+<status status="PASS" start="2026-02-02T14:33:07.069398" elapsed="0.008058"/>
+</test>
+<status status="PASS" start="2026-02-02T14:33:07.052744" elapsed="0.025466"/>
+</suite>
+<status status="PASS" start="2026-02-02T14:33:06.914539" elapsed="0.164411"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot" id="s1" pass="3" fail="0" skip="0">Robot</stat>
+<stat name="Booking Api" id="s1-s1" pass="1" fail="0" skip="0">Robot.Booking Api</stat>
+<stat name="Movies Api" id="s1-s2" pass="2" fail="0" skip="0">Robot.Movies Api</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

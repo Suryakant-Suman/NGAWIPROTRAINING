@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-01-30T21:50:19.297519" rpa="false" schemaversion="5">
+<suite id="s1" name="TC 007" source="D:\NGATWIPRO\Day13\TC_007.robot">
+<kw name="Open OrangeHRM" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-30T21:50:20.332514" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-01-30T21:50:20.331614" elapsed="9.295228"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-01-30T21:50:29.627466" elapsed="0.059420"/>
+</kw>
+<status status="PASS" start="2026-01-30T21:50:20.329227" elapsed="9.358217"/>
+</kw>
+<test id="s1-t1" name="Login with user from Excel" line="38">
+<kw name="OrangeHRM Login With Excel">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>name=username</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-01-30T21:50:29.689946" elapsed="3.307222"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T21:50:32.998622" level="INFO">Typing text 'Log' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T21:50:32.997672" elapsed="0.123937"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-01-30T21:50:33.123334" level="INFO">Typing text 'Executed via DataDriver' into text field 'name=password'.</msg>
+<arg>name=password</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T21:50:33.122328" elapsed="0.162467"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-01-30T21:50:33.285780" level="INFO">Clicking button 'xpath=//button[@type='submit']'.</msg>
+<arg>xpath=//button[@type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-01-30T21:50:33.285196" elapsed="0.114796"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-01-30T21:50:48.611727" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-30T21:50:48.612696" level="FAIL">Element 'xpath=//span[@class='oxd-userdropdown-tab']' not visible after 15 seconds.</msg>
+<arg>xpath=//span[@class='oxd-userdropdown-tab']</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-01-30T21:50:33.400410" elapsed="15.221447">Element 'xpath=//span[@class='oxd-userdropdown-tab']' not visible after 15 seconds.</status>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2026-01-30T21:50:48.622781" elapsed="0.000266"/>
+</kw>
+<kw name="Logout From OrangeHRM">
+<status status="NOT RUN" start="2026-01-30T21:50:48.623686" elapsed="0.000238"/>
+</kw>
+<arg>Log</arg>
+<arg>Executed via DataDriver</arg>
+<status status="FAIL" start="2026-01-30T21:50:29.689294" elapsed="18.935046">Element 'xpath=//span[@class='oxd-userdropdown-tab']' not visible after 15 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-01-30T21:50:29.687717" elapsed="18.937167">Element 'xpath=//span[@class='oxd-userdropdown-tab']' not visible after 15 seconds.</status>
+</test>
+<kw name="Close OrangeHRM" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-30T21:50:48.627470" elapsed="2.502843"/>
+</kw>
+<status status="PASS" start="2026-01-30T21:50:48.626824" elapsed="2.503912"/>
+</kw>
+<status status="FAIL" start="2026-01-30T21:50:19.350381" elapsed="31.780500"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC 007" id="s1" pass="0" fail="1" skip="0">TC 007</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-01-30T21:50:20.321219" level="ERROR">Error in file 'D:\NGATWIPRO\Day13\TC_007.robot' on line 4: Importing library 'DataDriver' failed: ModuleNotFoundError: No module named 'DataDriver'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Surya\AppData\Roaming\JetBrains\PyCharm2025.3\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  D:\NGATWIPRO\Day13
+  C:\Users\Surya\AppData\Roaming\JetBrains\PyCharm2025.3\plugins\robotframework-intellij\lib
+  C:\Users\Surya\AppData\Roaming\JetBrains\PyCharm2025.3\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Python313\python313.zip
+  C:\Python313\DLLs
+  C:\Python313\Lib
+  C:\Python313
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages\win32
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages\win32\lib
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages\Pythonwin
+  C:\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
+

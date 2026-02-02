@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.13.5 on win32)" generated="2026-02-02T11:58:15.208732" rpa="false" schemaversion="5">
+<suite id="s1" name="TC api" source="D:\NGATWIPRO\Day14\apiTc\TC_api.robot">
+<test id="s1-t1" name="Verify Get_User" line="9">
+<kw name="Create Session">
+<msg time="2026-02-02T11:58:15.310234" level="FAIL">No keyword with name 'Create Session' found.</msg>
+<arg>mysession</arg>
+<arg>${baseurl}</arg>
+<status status="FAIL" start="2026-02-02T11:58:15.309931" elapsed="0.000499">No keyword with name 'Create Session' found.</status>
+</kw>
+<kw name="GET On Session">
+<var>${response}</var>
+<arg>mysession</arg>
+<arg>/users</arg>
+<status status="NOT RUN" start="2026-02-02T11:58:15.311491" elapsed="0.000464"/>
+</kw>
+<kw name="Status Should Be">
+<arg>200</arg>
+<arg>${response}</arg>
+<status status="NOT RUN" start="2026-02-02T11:58:15.312491" elapsed="0.000233"/>
+</kw>
+<kw name="To Json">
+<var>${res_jon}</var>
+<arg>${response.content}</arg>
+<status status="NOT RUN" start="2026-02-02T11:58:15.313071" elapsed="0.000144"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${res_jon}=</arg>
+<arg>console=True</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-02-02T11:58:15.313418" elapsed="0.000124"/>
+</kw>
+<status status="FAIL" start="2026-02-02T11:58:15.307970" elapsed="0.005849">No keyword with name 'Create Session' found.</status>
+</test>
+<status status="FAIL" start="2026-02-02T11:58:15.242666" elapsed="0.072150"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="TC api" id="s1" pass="0" fail="1" skip="0">TC api</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2026-02-02T11:58:15.305021" level="ERROR">Error in file 'D:\NGATWIPRO\Day14\apiTc\TC_api.robot' on line 2: Importing library 'RequestsLibrary' failed: ModuleNotFoundError: No module named 'RequestsLibrary'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Surya\AppData\Roaming\JetBrains\PyCharm2025.3\plugins\robotframework-intellij\lib\robotframework_debug_adapter
+  D:\NGATWIPRO
+  C:\Users\Surya\AppData\Roaming\JetBrains\PyCharm2025.3\plugins\robotframework-intellij\lib
+  C:\Users\Surya\AppData\Roaming\JetBrains\PyCharm2025.3\plugins\robotframework-intellij\lib\robotframework_ls\vendored
+  C:\Python313\python313.zip
+  C:\Python313\DLLs
+  C:\Python313\Lib
+  C:\Python313
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages\win32
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages\win32\lib
+  C:\Users\Surya\AppData\Roaming\Python\Python313\site-packages\Pythonwin
+  C:\Python313\Lib\site-packages</msg>
+</errors>
+</robot>
