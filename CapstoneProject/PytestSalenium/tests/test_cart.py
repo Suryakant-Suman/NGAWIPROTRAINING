@@ -26,4 +26,6 @@ def test_add_to_cart(driver, product_name):
     product.add_to_cart()
 
     msg = product.get_success_message()
+
     assert "Success" in msg
+    assert product_name.lower() in msg.lower()

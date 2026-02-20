@@ -16,8 +16,6 @@ def driver():
     driver.quit()
 
 
-# -------- ADD THIS PART BELOW --------
-
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item):
 
@@ -32,5 +30,8 @@ def pytest_runtest_makereport(item):
             folder = "screenshots"
             os.makedirs(folder, exist_ok=True)
 
-            file_name = datetime.now().strftime("%Y%m%d_%H%M%S") + ".png"
+            test_name = item.name
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            file_name = f"{test_name}_{timestamp}.png"
+
             driver.save_screenshot(os.path.join(folder, file_name))

@@ -1,0 +1,80 @@
+2026-02-20 16:48:53,840 | [Browser] Launching tests on chrome
+2026-02-20 16:48:53,842 | [Registration] Registering Test User (qa_pytest_1771586333841@example.com)
+2026-02-20 16:48:56,131 | [Account] Logging out current user
+2026-02-20 16:48:56,828 | [Login] Logging in with qa_pytest_1771586333841@example.com
+2026-02-20 16:48:58,086 | [Account] Logging out current user
+2026-02-20 16:49:02,309 | [Setup] Creating 2 shared users for run 20260220164901
+2026-02-20 16:49:02,310 | [Registration] Registering Arimardan Singh (qa_user1_20260220164901@example.com)
+2026-02-20 16:49:04,963 | [Account] Logging out current user
+2026-02-20 16:49:05,669 | [Registration] Registering Aaryansh Kumar (qa_user2_20260220164901@example.com)
+2026-02-20 16:49:07,441 | [Account] Logging out current user
+2026-02-20 16:49:11,581 | [Browser] Launching tests on chrome
+2026-02-20 16:49:11,583 | [Login] Using shared user index 1: qa_user1_20260220164901@example.com
+2026-02-20 16:49:11,583 | [Login] Logging in with qa_user1_20260220164901@example.com
+2026-02-20 16:49:13,361 | [Account] Logging out current user
+2026-02-20 16:49:14,039 | [Login] Logging in with qa_user1_20260220164901@example.com
+2026-02-20 16:49:18,794 | [Browser] Launching tests on chrome
+2026-02-20 16:49:18,797 | [Login] Using shared user index 2: qa_user2_20260220164901@example.com
+2026-02-20 16:49:18,797 | [Login] Logging in with qa_user2_20260220164901@example.com
+2026-02-20 16:49:20,594 | [Account] Logging out current user
+2026-02-20 16:49:21,264 | [Login] Logging in with qa_user2_20260220164901@example.com
+2026-02-20 16:49:25,838 | [Browser] Launching tests on chrome
+2026-02-20 16:49:25,840 | [Login] Using shared user index 1: qa_user1_20260220164901@example.com
+2026-02-20 16:49:25,840 | [Login] Logging in with qa_user1_20260220164901@example.com
+2026-02-20 16:49:27,523 | [Product] Searching product: iPhone
+2026-02-20 16:49:27,952 | [Product] Opening product details: iPhone
+2026-02-20 16:49:31,975 | [Browser] Launching tests on chrome
+2026-02-20 16:49:31,977 | [Login] Using shared user index 2: qa_user2_20260220164901@example.com
+2026-02-20 16:49:31,977 | [Login] Logging in with qa_user2_20260220164901@example.com
+2026-02-20 16:49:33,784 | [Product] Searching product: MacBook
+2026-02-20 16:49:34,287 | [Product] Opening product details: MacBook
+2026-02-20 16:49:38,128 | [Browser] Launching tests on chrome
+2026-02-20 16:49:38,130 | [Login] Using shared user index 1: qa_user1_20260220164901@example.com
+2026-02-20 16:49:38,130 | [Login] Logging in with qa_user1_20260220164901@example.com
+2026-02-20 16:49:39,915 | [Cart] Clearing cart before scenario
+2026-02-20 16:49:40,166 | [Product] Searching product: iPhone
+2026-02-20 16:49:40,712 | [Product] Opening product details: iPhone
+2026-02-20 16:49:41,290 | [Cart] Adding current product to cart
+2026-02-20 16:49:41,959 | [Cart] Opening shopping cart
+2026-02-20 16:49:42,307 | [Cart] Verifying product present: iPhone
+2026-02-20 16:49:45,850 | [Browser] Launching tests on chrome
+2026-02-20 16:49:45,852 | [Login] Using shared user index 2: qa_user2_20260220164901@example.com
+2026-02-20 16:49:45,852 | [Login] Logging in with qa_user2_20260220164901@example.com
+2026-02-20 16:49:47,987 | [Cart] Clearing cart before scenario
+2026-02-20 16:49:48,190 | [Product] Searching product: MacBook
+2026-02-20 16:49:48,866 | [Product] Opening product details: MacBook
+2026-02-20 16:49:49,345 | [Cart] Adding current product to cart
+2026-02-20 16:49:49,968 | [Cart] Opening shopping cart
+2026-02-20 16:49:50,244 | [Cart] Verifying product present: MacBook
+2026-02-20 16:49:53,620 | [Browser] Launching tests on chrome
+2026-02-20 16:49:53,621 | [Login] Using shared user index 1: qa_user1_20260220164901@example.com
+2026-02-20 16:49:53,621 | [Login] Logging in with qa_user1_20260220164901@example.com
+2026-02-20 16:49:56,453 | [Cart] Clearing cart before scenario
+2026-02-20 16:49:57,119 | [Product] Searching product: iPhone
+2026-02-20 16:49:57,534 | [Product] Opening product details: iPhone
+2026-02-20 16:49:58,109 | [Cart] Adding current product to cart
+2026-02-20 16:49:58,714 | [Cart] Opening shopping cart
+2026-02-20 16:49:58,950 | [Cart] Verifying product present: iPhone
+2026-02-20 16:49:58,990 | [Cart] Updating quantity to 1
+2026-02-20 16:49:59,481 | [Cart] Removing product from cart: iPhone
+2026-02-20 16:49:59,536 | [Cart] Verifying product removed: iPhone
+2026-02-20 16:50:04,047 | [Browser] Launching tests on chrome
+2026-02-20 16:50:04,049 | [Login] Using shared user index 2: qa_user2_20260220164901@example.com
+2026-02-20 16:50:04,050 | [Login] Logging in with qa_user2_20260220164901@example.com
+2026-02-20 16:50:13,150 | [Cart] Clearing cart before scenario
+2026-02-20 16:50:15,900 | [Product] Searching product: MacBook
+2026-02-20 16:50:17,044 | [Product] Opening product details: MacBook
+2026-02-20 16:50:18,171 | [Cart] Adding current product to cart
+2026-02-20 16:50:18,767 | [Cart] Opening shopping cart
+2026-02-20 16:50:19,695 | [Cart] Verifying product present: MacBook
+2026-02-20 16:50:19,729 | [Cart] Updating quantity to 1
+2026-02-20 16:50:20,422 | [Cart] Removing product from cart: MacBook
+2026-02-20 16:50:20,479 | [Cart] Verifying product removed: MacBook
+2026-02-20 16:50:24,959 | [Browser] Launching tests on chrome
+2026-02-20 16:50:24,961 | [Login] Using shared user index 1: qa_user1_20260220164901@example.com
+2026-02-20 16:50:24,962 | [Login] Logging in with qa_user1_20260220164901@example.com
+2026-02-20 16:50:27,106 | [Account] Logging out current user
+2026-02-20 16:50:31,260 | [Browser] Launching tests on chrome
+2026-02-20 16:50:31,262 | [Login] Using shared user index 2: qa_user2_20260220164901@example.com
+2026-02-20 16:50:31,262 | [Login] Logging in with qa_user2_20260220164901@example.com
+2026-02-20 16:50:33,101 | [Account] Logging out current user

@@ -2,40 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37c184c5-3c72-4911-b20c-68e995ced9df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/config/config.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/conftest.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/products.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/products.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/users.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/users.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/account_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/base_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/cart_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/home_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/product_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/search_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pytest.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_e2e_flow.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_logout.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_open.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_search.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_update_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/config_reader.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/driver_factory.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/logger.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/screenshot.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/assertions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/arguments.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/run.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CapstoneProject/TestData/test_data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/products.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/products.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/users.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/users.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_search.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_update_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_update_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/driver_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/driver_factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/logger.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/logger.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

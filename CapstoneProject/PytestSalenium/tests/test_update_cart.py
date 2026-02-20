@@ -19,23 +19,18 @@ def load_products():
 @pytest.mark.parametrize("product_name", load_products())
 def test_update_and_remove_cart(driver, product_name):
 
-    # SEARCH
     search = SearchPage(driver)
     search.search_product(product_name)
     search.open_first_product()
 
-    # ADD
     product = ProductPage(driver)
     product.add_to_cart()
 
-    # OPEN CART
     cart = CartPage(driver)
     cart.open_cart()
 
-    # UPDATE
     cart.update_quantity("2")
-
-    # REMOVE
     cart.remove_item()
 
     assert "Shopping Cart" in driver.title
+    assert "Your shopping cart is empty" in driver.page_source

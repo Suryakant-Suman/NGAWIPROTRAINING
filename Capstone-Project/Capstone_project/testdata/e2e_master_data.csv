@@ -1,0 +1,3 @@
+*** Test Cases ***;${firstname};${lastname};${phone};${password};${product};${quantity}
+User 1;Arimardan;Singh;9700000001;Password123;iPhone;1
+User 2;Aaryansh;Kumar;9700000002;Password123;MacBook;1

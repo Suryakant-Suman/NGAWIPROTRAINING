@@ -1,20 +1,16 @@
 from selenium import webdriver
-
-# try reading config, but don't crash if missing
-try:
-    from utilities.config_reader import get_browser
-    browser = get_browser().lower()
-except Exception:
-    # fallback default
-    browser = "chrome"
+from utilities.config_reader import get_browser
 
 
 def get_driver():
 
+    browser = get_browser().lower()
+
     if browser == "firefox":
         driver = webdriver.Firefox()
+    elif browser == "edge":
+        driver = webdriver.Edge()
     else:
-        # default always chrome
         driver = webdriver.Chrome()
 
     driver.maximize_window()
