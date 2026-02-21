@@ -1,17 +1,8 @@
 import pytest
-import csv
-import os
 from pages.search_page import SearchPage
 from pages.product_page import ProductPage
 from pages.cart_page import CartPage
-
-
-def load_products():
-    base = os.path.dirname(os.path.dirname(__file__))
-    path = os.path.join(base, "data", "products.csv")
-
-    with open(path, newline="") as f:
-        return [row["product"] for row in csv.DictReader(f)]
+from utilities.data_reader import load_products
 
 
 @pytest.mark.smoke
@@ -28,7 +19,6 @@ def test_update_and_remove_cart(driver, product_name):
 
     cart = CartPage(driver)
     cart.open_cart()
-
     cart.update_quantity("2")
     cart.remove_item()
 

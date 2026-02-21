@@ -1,5 +1,3 @@
 testcase,email,password,product,quantity
-valid_user_1,xyz@gmail.com,Password123,iPhone,1
-valid_user_2,abc@gmail.com,Password123,MacBook,1
+valid_user_1,rajanSDFGH@gmail.com,Password123,iPhone,1
 invalid_email_1,xyzgmail.com,Password123,iPhone,1
-invalid_email_2,abc@.com,Password123,MacBook,1

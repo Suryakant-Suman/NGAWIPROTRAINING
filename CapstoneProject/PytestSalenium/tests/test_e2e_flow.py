@@ -1,36 +1,15 @@
-import csv
-import os
 import pytest
-
 from pages.login_page import LoginPage
 from pages.search_page import SearchPage
 from pages.product_page import ProductPage
 from pages.cart_page import CartPage
 from pages.account_page import AccountPage
+from utilities.data_reader import load_valid_users, load_products
 
 
-# ---------- SAFE PATH BUILD ----------
-BASE = os.path.dirname(os.path.dirname(__file__))
-USERS = os.path.join(BASE, "data", "users.csv")
-PRODUCTS = os.path.join(BASE, "data", "products.csv")
+MASTER = load_valid_users()[0]
 
 
-# ---------- MASTER USER ----------
-def get_master_user():
-    with open(USERS, newline="") as f:
-        return next(csv.DictReader(f))
-
-
-# ---------- LOAD PRODUCTS ----------
-def load_products():
-    with open(PRODUCTS, newline="") as f:
-        return [row["product"] for row in csv.DictReader(f)]
-
-
-MASTER = get_master_user()
-
-
-# ---------- ORDERED TEST ----------
 @pytest.mark.flow
 @pytest.mark.order(7)
 @pytest.mark.parametrize("product_name", load_products())
@@ -60,5 +39,4 @@ def test_full_ecommerce_flow(driver, product_name):
     account = AccountPage(driver)
     account.logout()
 
-    # VERIFY LOGOUT
     assert "Account Logout" in driver.page_source

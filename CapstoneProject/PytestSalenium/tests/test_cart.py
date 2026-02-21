@@ -1,16 +1,7 @@
 import pytest
-import csv
-import os
 from pages.search_page import SearchPage
 from pages.product_page import ProductPage
-
-
-def load_products():
-    base = os.path.dirname(os.path.dirname(__file__))
-    path = os.path.join(base, "data", "products.csv")
-
-    with open(path, newline="") as f:
-        return [row["product"] for row in csv.DictReader(f)]
+from utilities.data_reader import load_products
 
 
 @pytest.mark.smoke

@@ -1,8 +1,10 @@
 import csv
 import os
 
-BASE = os.path.dirname(os.path.dirname(__file__))
-DATA_FILE = os.path.join(BASE, "TestData", "test_data.csv")
+# Go 2 levels up (from utilities → PytestSalenium → CapstoneProject)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
+
+DATA_FILE = os.path.join(BASE_DIR, "TestData", "test_data.csv")
 
 
 def load_all_data():
@@ -11,11 +13,11 @@ def load_all_data():
 
 
 def load_valid_users():
-    return [row for row in load_all_data() if "valid" in row["testcase"]]
+    return [row for row in load_all_data() if row["testcase"].startswith("valid")]
 
 
 def load_invalid_users():
-    return [row for row in load_all_data() if "invalid" in row["testcase"]]
+    return [row for row in load_all_data() if row["testcase"].startswith("invalid")]
 
 
 def load_products():
