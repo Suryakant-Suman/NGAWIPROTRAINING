@@ -1,3 +1,0 @@
-testcase,email,password,product,quantity
-valid_user_1,rajanSDFGH@gmail.com,Password123,iPhone,1
-invalid_email_1,xyzgmail.com,Password123,iPhone,1

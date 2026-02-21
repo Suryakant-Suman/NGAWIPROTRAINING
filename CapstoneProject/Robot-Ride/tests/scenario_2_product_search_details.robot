@@ -1,5 +1,5 @@
 *** Settings ***
-Library    DataDriver    file=${CURDIR}/../testdata/e2e_master_data.csv
+Library    DataDriver    file=${CURDIR}/../../TestData/e2e_master_data.csv
 Resource   ../keywords/account_keywords.robot
 Resource   ../keywords/product_keywords.robot
 

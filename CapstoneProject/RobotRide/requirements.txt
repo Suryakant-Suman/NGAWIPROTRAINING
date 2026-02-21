@@ -1,8 +1,0 @@
-
-robotframework
-robotframework-seleniumlibrary
-robotframework-datadriver
-selenium
-webdriver-manager
-pytest
-pytest-html

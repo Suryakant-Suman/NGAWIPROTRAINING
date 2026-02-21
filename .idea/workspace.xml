@@ -2,49 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37c184c5-3c72-4911-b20c-68e995ced9df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/raw_login_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/est_login_invalid_email.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/resources/data_loader.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/config/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/report.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260217_113635.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260217_113717.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260218_112308.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260218_112317.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260218_112324.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260218_112332.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260218_112341.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260218_112349.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/20260218_112356.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_add_to_cart[#mac]_20260218_145659.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_add_to_cart[#samsung]_20260218_145716.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_153945.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_154122.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_154248.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_154515.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_154724.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_154739.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_154835.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_154947.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user0]_20260218_155204.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_151454.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_152338.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_152610.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_152712.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_153014.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_153211.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_153440.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login[user1]_20260218_153737.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/screenshots/test_login_20260218_150928.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_e2e_flow.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_e2e_flow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/raw_login_page.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/est_login_invalid_email.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_logout.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_logout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_search.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_update_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_update_cart.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/data_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/data_reader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/RobotRide/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/run.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/RobotRide/testdata/e2e_master_data.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/RobotRide/tests/scenario_1_registration_login.robot" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/tests/scenario_1_registration_login.robot" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CapstoneProject/TestData/test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/TestData/test_data.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -308,6 +276,15 @@
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_logout.py</url>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/data_reader.py</url>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="robot-line">
+          <url>file://$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/data_reader.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

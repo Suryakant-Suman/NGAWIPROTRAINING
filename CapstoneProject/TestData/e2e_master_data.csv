@@ -1,0 +1,3 @@
+*** Test Cases ***;${firstname};${lastname};${email};${phone};${password};${product};${quantity}
+User 1;Ayush;Singh;ayush+12345@gmail.com;9700000001;Password123;iPhone;1
+User 2;Aaryan;Kumar;aaryan+12345@gmail.com;9700000002;Password123;MacBook;1

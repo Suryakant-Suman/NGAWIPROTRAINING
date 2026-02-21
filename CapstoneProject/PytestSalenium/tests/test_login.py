@@ -14,15 +14,3 @@ def test_login(driver, user):
 
     assert "My Account" in driver.title
     assert "Logout" in driver.page_source
-
-
-# -------- Negative Test --------
-@pytest.mark.negative
-@pytest.mark.parametrize("user", load_invalid_users())
-def test_login_invalid_email_format(driver, user):
-
-    login = LoginPage(driver)
-    login.open_login()
-    login.login(user["email"], user["password"])
-
-    assert "Warning" in driver.page_source or "Invalid" in driver.page_source

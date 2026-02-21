@@ -1,4 +1,0 @@
--d results
---timestampoutputs
---loglevel DEBUG
---reporttitle RobotRide Automation Report
