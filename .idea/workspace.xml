@@ -2,18 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37c184c5-3c72-4911-b20c-68e995ced9df" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/resources/data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/run.bat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/arguments.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/products.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/products.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/users.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/data/users.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/logs/test.log" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/logs/test.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/pages/raw_login_page.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/report.html" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/reports/report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/est_login_invalid_email.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/tests/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/data_reader.py" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/PytestSalenium/utilities/data_reader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/RobotRide/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/run.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/RobotRide/testdata/e2e_master_data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/RobotRide/tests/scenario_1_registration_login.robot" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/RobotRide/tests/scenario_1_registration_login.robot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CapstoneProject/TestData/test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/CapstoneProject/TestData/test_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/log.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/output.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/reports/selenium-screenshot-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/reports/selenium-screenshot-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/reports/selenium-screenshot-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/reports/selenium-screenshot-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/reports/selenium-screenshot-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CapstoneProject/Robot-Ride/reports/selenium-screenshot-6.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
